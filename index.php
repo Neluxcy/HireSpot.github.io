@@ -91,7 +91,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
             <a class="navbar-brand " href="#"><img src="img/logo.png" width="137px" height="43px" alt="HireSpot" /></a>
 
             <!--profile-->
-            <dvi>
+            <div>
                 <div class="dropdown">
                     <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="img/userDefault.jpg" alt="avatar" width="32" height="32" class="rounded-circle me-2">
@@ -102,7 +102,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                         <li><a class="dropdown-item" href="./pages/LoginCompany.php">Company</a></li>
                     </ul>
                 </div>
-            </dvi>
+            </div>
         </div>
         </div>
     </nav>
@@ -209,21 +209,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                                     <i type="button" class="fa-solid fa-venus-mars" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover"></i>
                                                 </span>
                                                 <div class="col">
-                                                    <div class="">
-                                                        <label class="form-check-label" for="flexRadioDefault1">
-                                                            Male
-                                                        </label>
-                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked />
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="">
-                                                        <label class="form-check-label" for="flexRadioDefault2">
-                                                            Female
-                                                        </label>
-                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-                                                    </div>
-                                                </div>
+    <div class="mb-3">
+        <label for="flexRadioDefault1" class="form-check-label">Male</label>
+        <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault1" checked />
+    </div>
+</div>
+<div class="col">
+    <div class="mb-3">
+        <label for="flexRadioDefault2" class="form-check-label">Female</label>
+        <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault2" />
+    </div>
+</div>
 
                                                 <div class="col">
                                                     <div class="">
@@ -237,130 +233,89 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
 
 
                                             <div class="d-none" id="selectGender">
-                                                <select name="" id="" class="form-select">
-                                                    <option value="1">one</option>
-                                                    <option value="2">two</option>
-                                                    <option value="3">three</option>
-                                                </select>
-                                                <div class="my-3">
-                                                    <span class="text-muted">Your pronoun is visible to everyone.</span>
-                                                    <input type="text" name="" id="" class="form-control" placeholder="Gender (optional)" />
-                                                </div>
-                                            </div>
-                                            <div class="">
-                                                <span class="text-muted fs-7">Pree below button to create new account</span>
-                                            </div>
-                                            <div class="text-center">
-                                                <!-- <button type="submit" class="btn btn-outline-primary my-3" data-bs-dismiss="modal">
-                                                    Sing up
-                                                </button> -->
-                                                <input type="submit" value="Sing up" class="btn btn-outline-primary my-3">
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <select class="form-select">
+        <option value="1">one</option>
+        <option value="2">two</option>
+        <option value="3">three</option>
+    </select>
+    <div class="my-3">
+        <span class="text-muted">Your pronoun is visible to everyone.</span>
+        <input type="text" class="form-control" placeholder="Gender (optional)" />
+    </div>
+</div>
+
+<div>
+    <span class="text-muted fs-7">Press the button below to create a new account</span>
+</div>
+<div class="text-center">
+<input type="submit" value="Sign up" class="btn btn-outline-primary my-3">
+
+</div>
+
+<!-- Marketing Section -->
+<div class="container marketing p-3">
+    <div class="row mt-4">
+        <div class="col-lg-4 text-center">
+            <img class="rounded mb-2" src="./img/search.png" alt="Find Job" width="140" height="140">
+            <h2>Find Your Job Easier</h2>
+            <p>At Hirespot, we understand that finding the right job can be a challenging process...</p>
+        </div>
+        <div class="col-lg-4 text-center">
+            <img class="rounded mb-2" src="./img/sign-language.png" alt="Easy Application" width="140" height="140">
+            <h2>Easy Application Process</h2>
+            <p>Applying for jobs shouldn't be a time-consuming process...</p>
+        </div>
+        <div class="col-lg-4 text-center">
+            <img class="rounded mb-2" src="./img/shield.png" alt="Trust and Security" width="140" height="140">
+            <h2>Trust and Security</h2>
+            <p>We understand that your trust and security are of utmost importance...</p>
         </div>
     </div>
 
-    <!-- Marketing messaging and featurettes
-        ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing p-3">
-
-        <!-- Three columns of text below the carousel -->
-        <div class="row mt-4">
-            <div class="col-lg-4" style="text-align: center;">
-                <img class="rounded mb-2" src="./img/search.png" alt="Generic placeholder image" width="140" height="140">
-                <h2 class="text-center ">Find Your Job Easier</h2>
-                <p class="text-center">At Hirespot, we understand that finding the right job can be a challenging
-                    process. That's why we've developed a suite of powerful tools and features to make your job search
-                    easier, faster, and more efficient.</p>
-
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4" style="text-align: center;">
-                <img class="rounded mb-2" src="./img/sign-language.png" alt="Generic placeholder image" width="140" height="140">
-                <h2 class="text-center">Easy Application Process</h2>
-                <p class="text-center">Applying for jobs shouldn't be a time-consuming and complicated process. We've
-                    revolutionized the application experience to make it easier and more efficient. Discover how our job
-                    application portal simplifies the application process, giving you more time to focus on what matters
-                    – landing your dream job.</p>
-
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4" style="text-align: center;">
-                <img class="rounded mb-2" src="./img/shield.png" alt="Generic placeholder image" width="140" height="140">
-                <h2 class="text-center">Trust and Security</h2>
-                <p class="text-center">We understand that your trust and security are of utmost importance when using a
-                    job application portal. We take this responsibility seriously and have implemented robust measures
-                    to ensure a safe and secure environment for your job search.</p>
-
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-
-
-        <!-- START THE FEATURETTES -->
-
-        <div class="row featurette my-3 pt-5">
-            <div class="col-md-7 d-flex align-items-center justify-content-cente">
-                <div>
-                    <h2 class="featurette-heading">Our Story : <span class="text-muted">Driven by Passion and
-                            Purpose.</span></h2>
-                    <p class="lead"> Hirespot was born out of a passion for connecting talented individuals with
-                        life-changing career opportunities. Our founders experienced the challenges of job hunting
-                        firsthand and envisioned a platform that could revolutionize the process, making it more
-                        efficient, personalized, and rewarding.</p>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="https://img.freepik.com/free-vector/modern-resume-template_23-2147836674.jpg?size=626&ext=jpg&ga=GA1.2.1882095610.1686062107&semt=ais" data-holder-rendered="true">
+    <!-- Featurettes -->
+    <div class="row featurette my-3 pt-5">
+        <div class="col-md-7 d-flex align-items-center justify-content-center">
+            <div>
+                <h2 class="featurette-heading">Our Story: <span class="text-muted">Driven by Passion and Purpose.</span></h2>
+                <p class="lead">Hirespot was born out of a passion for connecting talented individuals with life-changing career opportunities...</p>
             </div>
         </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="https://img.freepik.com/free-vector/modern-resume-template_23-2147836674.jpg" alt="Our Story" style="width: 500px; height: 500px;">
+        </div>
+    </div>
 
-        <div class="row featurette my-3">
-            <div class="col-md-7 order-md-2  d-flex align-items-center justify-content-cente">
-                <div>
-                    <h2 class="featurette-heading">Our Vision : <span class="text-muted">Shaping the Future of
-                            Work.</span></h2>
-                    <p class="lead">We envision a future where finding the perfect job is a seamless and empowering
-                        experience for everyone. We are committed to leveraging technology and innovation to reshape the
-                        way people approach their career paths, providing equal opportunities and driving positive
-                        change in the world of work.</p>
-                </div>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="https://img.freepik.com/free-vector/business-background-design_1200-89.jpg?size=626&ext=jpg&ga=GA1.1.1882095610.1686062107&semt=ais" data-holder-rendered="true" style="width: 500px; height: 500px;">
+    <div class="row featurette my-3">
+        <div class="col-md-7 order-md-2 d-flex align-items-center justify-content-center">
+            <div>
+                <h2 class="featurette-heading">Our Vision: <span class="text-muted">Shaping the Future of Work.</span></h2>
+                <p class="lead">We envision a future where finding the perfect job is a seamless and empowering experience for everyone...</p>
             </div>
         </div>
+        <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="https://img.freepik.com/free-vector/business-background-design_1200-89.jpg" alt="Our Vision" style="width: 500px; height: 500px;">
+        </div>
+    </div>
 
-        <div class="row featurette my-3">
-            <div class="col-md-7 d-flex align-items-center justify-content-cente">
-                <div>
-                    <h2 class="featurette-heading">Our Values : <span class="text-muted">Transparency, Inclusivity, and
-                            Integrity</span></h2>
-                    <p class="lead">We uphold the highest standards of transparency, inclusivity, and integrity. We
-                        believe in fostering an environment where diversity is celebrated, and all individuals are
-                        treated with fairness and respect. Our commitment to ethical practices ensures a trusted and
-                        reliable platform for job seekers and employers alike.</p>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="https://img.freepik.com/free-vector/choice-worker-concept_23-2148632123.jpg?size=626&ext=jpg&ga=GA1.1.1882095610.1686062107&semt=ais" data-holder-rendered="true" style="width: 500px; height: 500px;">
+    <div class="row featurette my-3">
+        <div class="col-md-7 d-flex align-items-center justify-content-center">
+            <div>
+                <h2 class="featurette-heading">Our Values: <span class="text-muted">Transparency, Inclusivity, and Integrity.</span></h2>
+                <p class="lead">We uphold the highest standards of transparency, inclusivity, and integrity...</p>
             </div>
         </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="https://img.freepik.com/free-vector/choice-worker-concept_23-2148632123.jpg" alt="Our Values" style="width: 500px; height: 500px;">
+        </div>
+    </div>
+</div>
 
-        <!-- /END THE FEATURETTES -->
-
-    </div><!-- /.container -->
-
-
-    <!-- footer  -->
-    <footer class="bg-white p-4 text-muted ">
-        <div class="container">
+<!-- Footer -->
+<footer class="bg-white p-4 text-muted">
+    <div class="container">
+        <!-- Footer content goes here -->
+    </div>
+</footer>
 
             <!-- action -->
             <hr />
